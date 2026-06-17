@@ -1,0 +1,13 @@
+name: Check CPU Info
+
+on:
+  workflow_dispatch:
+
+jobs:
+  cpu-check:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Show CPU information
+        run: |
+          lscpu
