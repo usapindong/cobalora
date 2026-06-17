@@ -1,0 +1,10 @@
+base:
+  image: ubuntu:24.04
+
+tasks:
+  - key: cpu-info
+    run: |
+      echo "CPU RWX:"
+      lscpu
+      echo "CORE:"
+      nproc
